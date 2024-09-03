@@ -1,14 +1,15 @@
-import type { ButtonProps } from '@chakra-ui/react';
-import { Button, Flex, Heading } from '@chakra-ui/react';
+import type { IconButtonProps } from '@chakra-ui/react';
+import { Flex, Heading, Icon, IconButton } from '@chakra-ui/react';
 import { action } from '@storybook/addon-actions';
 import type { Meta, StoryObj } from '@storybook/react';
+import { PiGhostBold, PiMicrophoneStageBold, PiRadioBold, PiSunglasses, PiVinylRecordBold } from 'react-icons/pi';
 
-const meta: Meta<typeof Button> = {
-    component: Button,
+const meta: Meta<typeof IconButton> = {
+    component: IconButton,
     argTypes: {
         size: {
             control: { type: 'radio' },
-            options: ['sm', 'md', 'lg']
+            options: ['iconSm', 'iconMd', 'iconLg', 'iconXl']
         },
         type: {
             control: { type: 'radio' },
@@ -23,17 +24,25 @@ const meta: Meta<typeof Button> = {
         children: `dope!`,
         type: 'button'
     },
-    title: 'Atoms/Forms/Button'
+    title: 'Atoms/Forms/IconButton'
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof IconButton>;
 
-export const Basic: Story = {};
+export const Basic: Story = {
+    args: {
+        icon: <Icon as={PiSunglasses} />,
+        size: 'iconMd'
+    }
+};
 
 export const All: Story = {
-    render: (props: ButtonProps) => (
+    args: {
+        icon: <Icon as={PiVinylRecordBold} />
+    },
+    render: (props: IconButtonProps) => (
         <Flex
             align="flex-start"
             direction="column"
@@ -41,7 +50,7 @@ export const All: Story = {
             justify="center"
             p={8}
         >
-            {['ghost', 'gradient', 'outline', 'solid'].map((variant) => (
+            {['ghost', 'outline', 'solid'].map((variant) => (
                 <Flex
                     align="flex-start"
                     direction="column"
@@ -58,7 +67,7 @@ export const All: Story = {
                         justify="flex-start"
                         key={`btn-${variant}-row`}
                     >
-                        {['sm', 'md', 'lg'].map((size) =>
+                        {['iconSm', 'iconMd', 'iconLg', 'iconXl'].map((size) =>
                             getButton({ props, size, variant })
                         )}
                     </Flex>
@@ -69,8 +78,11 @@ export const All: Story = {
 };
 
 export const Ghost: Story = {
-    render: (props: ButtonProps) => {
-        const disabledProps: ButtonProps = {
+    args: {
+        icon: <Icon as={PiGhostBold} />
+    },
+    render: (props: IconButtonProps) => {
+        const disabledProps: IconButtonProps = {
             ...props,
             isDisabled: true
         };
@@ -78,12 +90,12 @@ export const Ghost: Story = {
         return (
             <Flex align="flex-start" direction="column" gap={5} p={8}>
                 <Flex align="center" direction="row" gap={4}>
-                    {['sm', 'md', 'lg'].map((size) =>
+                    {['iconSm', 'iconMd', 'iconLg', 'iconXl'].map((size) =>
                         getButton({ props, size, variant: 'ghost' })
                     )}
                 </Flex>
                 <Flex align="center" direction="row" gap={4}>
-                    {['sm', 'md', 'lg'].map((size) =>
+                    {['iconSm', 'iconMd', 'iconLg', 'iconXl'].map((size) =>
                         getButton({
                             props: disabledProps,
                             size,
@@ -96,33 +108,30 @@ export const Ghost: Story = {
     }
 };
 
-export const Gradient: Story = {
-    render: (props: ButtonProps) => (
-        <Flex align="center" direction="row" gap={4} px={8} py={8}>
-            {['sm', 'md', 'lg'].map((size) =>
-                getButton({ props, size, variant: 'gradient' })
-            )}
-        </Flex>
-    )
-};
-
 export const Outline: Story = {
-    render: (props: ButtonProps) => {
-        const disabledProps: ButtonProps = {
+    args: {
+        icon: <Icon as={PiRadioBold} />
+    },
+    render: (props: IconButtonProps) => {
+        const disabledProps: IconButtonProps = {
             ...props,
             isDisabled: true
-        }
+        };
 
         return (
             <Flex align="flex-start" direction="column" gap={5} p={8}>
                 <Flex align="center" direction="row" gap={4}>
-                    {['sm', 'md', 'lg'].map((size) =>
+                    {['iconSm', 'iconMd', 'iconLg', 'iconXl'].map((size) =>
                         getButton({ props, size, variant: 'outline' })
                     )}
                 </Flex>
                 <Flex align="center" direction="row" gap={4}>
-                    {['sm', 'md', 'lg'].map((size) =>
-                        getButton({ props: disabledProps, size, variant: 'outline' })
+                    {['iconSm', 'iconMd', 'iconLg', 'iconXl'].map((size) =>
+                        getButton({
+                            props: disabledProps,
+                            size,
+                            variant: 'outline'
+                        })
                     )}
                 </Flex>
             </Flex>
@@ -131,8 +140,11 @@ export const Outline: Story = {
 };
 
 export const Solid: Story = {
-    render: (props: ButtonProps) => {
-        const disabledProps: ButtonProps = {
+    args: {
+        icon: <Icon as={PiMicrophoneStageBold} />
+    },
+    render: (props: IconButtonProps) => {
+        const disabledProps: IconButtonProps = {
             ...props,
             isDisabled: true
         };
@@ -140,12 +152,12 @@ export const Solid: Story = {
         return (
             <Flex align="flex-start" direction="column" gap={5} p={8}>
                 <Flex align="center" direction="row" gap={4}>
-                    {['sm', 'md', 'lg'].map((size) =>
+                    {['iconSm', 'iconMd', 'iconLg', 'iconXl'].map((size) =>
                         getButton({ props, size, variant: 'solid' })
                     )}
                 </Flex>
                 <Flex align="center" direction="row" gap={4}>
-                    {['sm', 'md', 'lg'].map((size) =>
+                    {['iconSm', 'iconMd', 'iconLg', 'iconXl'].map((size) =>
                         getButton({
                             props: disabledProps,
                             size,
@@ -163,13 +175,14 @@ function getButton({
     size,
     variant
 }: {
-    props: ButtonProps;
+    props: IconButtonProps;
     size: string;
     variant: string;
 }): React.ReactElement {
     return (
-        <Button
+        <IconButton
             {...props}
+            aria-label="Icon Button"
             key={`btn-${variant}-${size}`}
             onClick={action(`${size} ${variant} clicked`)}
             size={size}

@@ -32,7 +32,7 @@ export function PageLayout({
             <GridItem area="header" bgColor="brown.500" h="full" m={0} p={0} w="full">
                 {header}
             </GridItem>
-            <GridItem area="main">{main}</GridItem>
+            <GridItem area="main" m={0} p={0}>{main}</GridItem>
             <GridItem area="footer">{footer}</GridItem>
         </Grid>
     );

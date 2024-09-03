@@ -1,7 +1,6 @@
 'use client';
-import { Box, Center, Spinner, Stack } from '@chakra-ui/react';
+import { Box, Center, Stack } from '@chakra-ui/react';
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf';
 
 export function Resume(): React.ReactElement {
     const [numPages, setNumPages] = useState<number>(2);
@@ -16,27 +15,14 @@ export function Resume(): React.ReactElement {
 
     return (
         <Center>
-            <Stack justify="center" maxW="40rem" py={6} w="full">
+            <Stack h="100vh" justify="center" maxW="40rem" py={6} w="full">
                 <Box
-                    as={Document}
-                    file="/assets/files/Jeff_Johnson-Resume_2024.pdf"
-                    loading={
-                        <Center py={10}>
-                            <Spinner color="indigo.500" />
-                        </Center>
-                    }
-                    onLoadSuccess={onDocumentLoadSuccess}
+                    as="object"
+                    data="/assets/files/Jeff_Johnson-Resume_2024.pdf"
+                    height="100%"
+                    type="application/pdf"
                     w="full"
-                >
-                    {Array.from(new Array(numPages), (el, index) => (
-                        <Page
-                            renderTextLayer={false}
-                            renderAnnotationLayer={false}
-                            key={`page_${index + 1}`}
-                            pageNumber={index + 1}
-                        />
-                    ))}
-                </Box>
+                />
             </Stack>
         </Center>
     );

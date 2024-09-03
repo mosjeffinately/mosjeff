@@ -12,9 +12,7 @@ import {
     useDisclosure
 } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
-import {
-    PiArrowFatUpDuotone
-} from 'react-icons/pi';
+import { PiArrowFatUpDuotone } from 'react-icons/pi';
 import Typist from 'react-text-typist';
 
 export function MosJeff(): React.ReactElement {
@@ -175,12 +173,12 @@ export function MosJeff(): React.ReactElement {
                             fontSize="md"
                             textAlign="center"
                         >
-                            I was inspired to create the dope! design system by
+                            {`I was inspired to create the dope! design system by
                             my favorite hat - a five-panel number with a
                             chain-stitched 'dope!' in cursive across the front.
                             I aim to evoke a Fall Saturday in Upstate New York,
                             with the leaves changing color and the smell of
-                            Football in the air.
+                            Football in the air.`}
                         </Text>
                     </Stack>
                 </Fade>

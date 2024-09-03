@@ -30,7 +30,7 @@ export function AboutMe(): React.ReactElement {
                     about me.
                 </Heading>
                 <Text color="gray.400" fontFamily="body" fontWeight={500}>
-                    Born and raised just outside of Buffalo, New York, I spent
+                    {`Born and raised just outside of Buffalo, New York, I spent
                     my youth playing soccer, baseball, basketball and street
                     hockey. During my formative years, I was spoiled by the
                     Bills going to four straight Super Bowls (
@@ -46,7 +46,7 @@ export function AboutMe(): React.ReactElement {
                     and Super Bowl losses - it's hardscrabble and scrappy spirit
                     helped forge my underdog mentality. It's the type of city
                     you can get behind and I believe I am that type of person as
-                    well.
+                    well.`}
                 </Text>
                 <Text color="gray.400" fontFamily="body" fontWeight={500}>
                     Since before I can remember, I had always wanted to go to

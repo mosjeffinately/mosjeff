@@ -82,7 +82,7 @@ export function SkillzRatings(): React.ReactElement {
                             <Stack spacing={4}>
                                 {languages.map(({ score, title }) => {
                                     return (
-                                        <Stack spacing={2}>
+                                        <Stack key={`languages-${title.split(' ').join('_')}`} spacing={2}>
                                             <HStack
                                                 color="indigo.500"
                                                 fontSize="sm"
@@ -101,7 +101,10 @@ export function SkillzRatings(): React.ReactElement {
                             <Stack spacing={4}>
                                 {jsFrameworks.map(({ score, title }) => {
                                     return (
-                                        <Stack spacing={2}>
+                                        <Stack
+                                            key={`jsFrameworks-${title.split(' ').join('_')}`}
+                                            spacing={2}
+                                        >
                                             <HStack
                                                 color="indigo.500"
                                                 fontSize="sm"
@@ -120,7 +123,10 @@ export function SkillzRatings(): React.ReactElement {
                             <Stack spacing={4}>
                                 {uiFrameworks.map(({ score, title }) => {
                                     return (
-                                        <Stack spacing={2}>
+                                        <Stack
+                                            key={`uiFrameworks-${title.split(' ').join('_')}`}
+                                            spacing={2}
+                                        >
                                             <HStack
                                                 color="indigo.500"
                                                 fontSize="sm"
@@ -139,7 +145,10 @@ export function SkillzRatings(): React.ReactElement {
                             <Stack spacing={4}>
                                 {databases.map(({ score, title }) => {
                                     return (
-                                        <Stack spacing={2}>
+                                        <Stack
+                                            key={`databases-${title.split(' ').join('_')}`}
+                                            spacing={2}
+                                        >
                                             <HStack
                                                 color="indigo.500"
                                                 fontSize="sm"
@@ -158,7 +167,10 @@ export function SkillzRatings(): React.ReactElement {
                             <Stack spacing={4}>
                                 {tools.map(({ score, title }) => {
                                     return (
-                                        <Stack spacing={2}>
+                                        <Stack
+                                            key={`tools-${title.split(' ').join('_')}`}
+                                            spacing={2}
+                                        >
                                             <HStack
                                                 color="indigo.500"
                                                 fontSize="sm"

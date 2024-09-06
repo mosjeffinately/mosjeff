@@ -1,3 +1,3 @@
 export * from './atoms/forms';
-export * from './molecules/data-display';
-export * from './molecules/feedback';
+export * from './recipes/data-display';
+export * from './recipes/feedback';

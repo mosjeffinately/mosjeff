@@ -1,4 +1,5 @@
 import {
+    Divider,
     Flex,
     FormControl,
     FormLabel,
@@ -7,10 +8,16 @@ import {
     InputGroup,
     InputLeftElement,
     InputRightElement,
+    Stack,
     type InputProps
 } from '@chakra-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { PiUserBold } from 'react-icons/pi';
+import {
+    PiBedBold,
+    PiBridgeBold,
+    PiMicrophoneBold,
+    PiVinylRecordBold
+} from 'react-icons/pi';
 
 const meta: Meta<typeof Input> = {
     component: Input,
@@ -45,15 +52,59 @@ export const Sizes: Story = {
         >
             <FormControl size="sm">
                 <FormLabel>Small</FormLabel>
-                <Input {...props} size="sm" />
+                <Stack spacing={3}>
+                    <Input {...props} size="sm" />
+                    <InputGroup size="sm">
+                        <InputLeftElement>
+                            <Icon as={PiVinylRecordBold} />
+                        </InputLeftElement>
+                        <Input {...props} />
+                    </InputGroup>
+                    <InputGroup size="sm">
+                        <InputRightElement>
+                            <Icon as={PiMicrophoneBold} />
+                        </InputRightElement>
+                        <Input {...props} />
+                    </InputGroup>
+                </Stack>
             </FormControl>
-            <FormControl>
+            <Divider />
+            <FormControl size="md">
                 <FormLabel>Medium</FormLabel>
-                <Input {...props} size="md" />
+                <Stack spacing={3}>
+                    <Input {...props} size="md" />
+                    <InputGroup size="md">
+                        <InputLeftElement>
+                            <Icon as={PiVinylRecordBold} />
+                        </InputLeftElement>
+                        <Input {...props} />
+                    </InputGroup>
+                    <InputGroup size="md">
+                        <InputRightElement>
+                            <Icon as={PiMicrophoneBold} />
+                        </InputRightElement>
+                        <Input {...props} />
+                    </InputGroup>
+                </Stack>
             </FormControl>
-            <FormControl>
+            <Divider />
+            <FormControl size="lg">
                 <FormLabel>Large</FormLabel>
-                <Input {...props} size="lg" />
+                <Stack spacing={3}>
+                    <Input {...props} size="lg" />
+                    <InputGroup size="lg">
+                        <InputLeftElement>
+                            <Icon as={PiVinylRecordBold} />
+                        </InputLeftElement>
+                        <Input {...props} />
+                    </InputGroup>
+                    <InputGroup size="lg">
+                        <InputRightElement>
+                            <Icon as={PiMicrophoneBold} />
+                        </InputRightElement>
+                        <Input {...props} />
+                    </InputGroup>
+                </Stack>
             </FormControl>
         </Flex>
     )
@@ -78,13 +129,13 @@ export const States: Story = {
             </FormControl>
             <FormControl isInvalid>
                 <FormLabel>Invalid</FormLabel>
-                <Input {...props} placeholder='To Paaaaaaaarty!' size="md" />
+                <Input {...props} placeholder="To Paaaaaaaarty!" size="md" />
             </FormControl>
             <FormControl>
                 <FormLabel>Left Icon</FormLabel>
                 <InputGroup>
-                    <InputLeftElement color="gray.300" h="full" ml={1}>
-                        <Icon as={PiUserBold} />
+                    <InputLeftElement>
+                        <Icon as={PiBedBold} />
                     </InputLeftElement>
                     <Input {...props} placeholder="No Sleep..." size="md" />
                 </InputGroup>
@@ -93,9 +144,13 @@ export const States: Story = {
                 <FormLabel>Right Icon</FormLabel>
                 <InputGroup>
                     <InputRightElement color="gray.300" h="full" mr={1}>
-                        <Icon as={PiUserBold} />
+                        <Icon as={PiBridgeBold} />
                     </InputRightElement>
-                    <Input {...props} placeholder="Til Brooklyn!!!!" size="md" />
+                    <Input
+                        {...props}
+                        placeholder="Til Brooklyn!!!!"
+                        size="md"
+                    />
                 </InputGroup>
             </FormControl>
         </Flex>

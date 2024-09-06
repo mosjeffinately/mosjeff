@@ -29,10 +29,19 @@ export function PageLayout({
             templateRows={`5rem 1fr 1fr`}
             w="full"
         >
-            <GridItem area="header" bgColor="brown.500" h="full" m={0} p={0} w="full">
+            <GridItem
+                area="header"
+                bgColor="brown.500"
+                h="full"
+                m={0}
+                p={0}
+                w="full"
+            >
                 {header}
             </GridItem>
-            <GridItem area="main" m={0} p={0}>{main}</GridItem>
+            <GridItem area="main" m={0} p={0}>
+                {main}
+            </GridItem>
             <GridItem area="footer">{footer}</GridItem>
         </Grid>
     );

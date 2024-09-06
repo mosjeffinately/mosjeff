@@ -1,7 +1,10 @@
-import { PageLayout } from '@mosjeff/components/layouts/page-layout';
-import { Header } from '@mosjeff/components/sections/header';
+import { MainSectionLayout } from '@mosjeff/components/layouts/main-section-layout';
 import { Resume } from '@mosjeff/components/sections/resume';
 
 export default function Experience(): React.ReactElement {
-    return <PageLayout header={<Header />} main={<Resume />} />;
+    return (
+        <MainSectionLayout>
+            <Resume />
+        </MainSectionLayout>
+    );
 }

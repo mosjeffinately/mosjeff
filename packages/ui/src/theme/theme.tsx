@@ -1,14 +1,16 @@
-import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
+import { type ThemeConfig, extendTheme } from '@chakra-ui/react';
 import '@fontsource/albert-sans';
 import '@fontsource/ibm-plex-mono';
 import {
     Avatar,
+    Badge,
     Button,
+    Card,
     Checkbox,
     IconButton,
     Input,
-    InputElement,
-    Progress
+    Progress,
+    Radio
 } from './components';
 import { workwear } from './config/colors';
 
@@ -16,12 +18,14 @@ export const theme: ThemeConfig = extendTheme({
     colors: workwear.colors,
     components: {
         Avatar,
+        Badge,
         Button,
+        Card,
         Checkbox,
         IconButton,
         Input,
-        InputElement,
-        Progress
+        Progress,
+        Radio
     },
     fonts: {
         body: `'Albert Sans', sans-serif`,
@@ -34,14 +38,8 @@ export const theme: ThemeConfig = extendTheme({
             body: {
                 bgColor: 'cream.500',
                 color: 'brown.500'
-            },
-            '.js-focus-visible :focus:not([data-focus-visible-added])': {
-                outline: 'none',
-                boxShadow: 'none'
             }
         }
     },
     useSystemColorMode: false
 });
-
-export default theme;

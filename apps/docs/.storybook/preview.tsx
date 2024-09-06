@@ -1,4 +1,4 @@
-import { ChakraProvider, CSSReset } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 import { theme } from '@mosjeff/dope-design-system';
 import { Preview } from '@storybook/react';
 import 'focus-visible/dist/focus-visible';
@@ -8,7 +8,8 @@ const preview: Preview = {
     decorators: [
         (Story) => (
             <ChakraProvider theme={theme}>
-                <CSSReset />
+                {/* <CSSReset /> */}
+                {/* <Global styles={GlobalStyles} /> */}
                 <Story />
             </ChakraProvider>
         )

@@ -37,6 +37,9 @@ export const Checkbox: ComponentStyleConfig = defineStyleConfig({
             fontWeight: 'normal'
         }
     },
+    defaultProps: {
+        size: 'md'
+    },
     sizes: {
         sm: {
             control: { h: 3, w: 3 },

@@ -1,3 +1,5 @@
+import { PageLayout } from '@mosjeff/components/layouts/page-layout';
+import { Header } from '@mosjeff/components/sections/header';
 import type { Metadata } from 'next';
 import { Albert_Sans, IBM_Plex_Mono } from 'next/font/google';
 import { Providers } from './providers';
@@ -22,12 +24,18 @@ export const metadata: Metadata = {
 export default function RootLayout({
     children
 }: Readonly<{
-    children: React.ReactNode;
+    children: React.ReactElement;
 }>) {
     return (
         <html lang="en">
             <body className={`${albert.className} ${plexMono.className}`}>
-                <Providers>{children}</Providers>
+                <Providers>
+                    <PageLayout
+                        header={<Header />}
+                        main={children}
+                        footer={<div></div>}
+                    />
+                </Providers>
             </body>
         </html>
     );

@@ -1,8 +1,11 @@
 'use client';
-import { PageLayout } from '@mosjeff/components/layouts/page-layout';
+import { MainSectionLayout } from '@mosjeff/components/layouts/main-section-layout';
 import { AboutMe } from '@mosjeff/components/sections/about-me';
-import { Header } from '@mosjeff/components/sections/header';
 
 export default function About(): React.ReactElement {
-    return <PageLayout header={<Header />} main={<AboutMe />} />;
+    return (
+        <MainSectionLayout>
+            <AboutMe />
+        </MainSectionLayout>
+    );
 }

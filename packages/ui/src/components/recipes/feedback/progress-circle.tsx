@@ -116,6 +116,7 @@ export function ProgressCircle({
                             cy={50}
                             fill="transparent"
                             initial="hide"
+                            key={`circle-progress-${title}`}
                             r={radius}
                             stroke={stroke}
                             strokeDasharray={circumference}

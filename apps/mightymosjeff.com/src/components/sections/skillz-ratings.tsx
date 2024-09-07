@@ -28,11 +28,12 @@ const tabProps: Partial<TabProps> = {
 
 export function SkillzRatings(): React.ReactElement {
     return (
-        <Flex as={Tabs} direction="column" w="full">
+        <Flex as={Tabs} direction="column" isLazy w="full">
             <TabList border="none" justifyContent="space-evenly">
                 <Tab {...tabProps}>Languages</Tab>
-                <Tab {...tabProps}>Javascript</Tab>
+                <Tab {...tabProps}>JS/TS</Tab>
                 <Tab {...tabProps}>UI/UX</Tab>
+                <Tab {...tabProps}>Java</Tab>
                 <Tab {...tabProps}>Databases</Tab>
                 <Tab {...tabProps}>Other Tools</Tab>
             </TabList>

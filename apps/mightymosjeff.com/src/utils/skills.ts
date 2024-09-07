@@ -90,6 +90,10 @@ export const uiFrameworks: SkillItem[] = [
         score: 8
     },
     {
+        title: 'Framer Motion',
+        score: 6
+    },
+    {
         title: 'Theme-UI',
         score: 9
     },

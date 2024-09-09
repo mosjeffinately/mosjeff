@@ -17,7 +17,7 @@ export function PageLayout({
             centerContent
             gridColumnGap={0}
             gridRowGap={0}
-            h="full"
+            h="100vh"
             maxW="90rem"
             p={0}
             templateAreas={`
@@ -26,7 +26,7 @@ export function PageLayout({
                     "footer"
                 `}
             templateColumns={`1fr`}
-            templateRows={`5rem 1fr 1fr`}
+            templateRows={`5rem 1fr 5rem`}
             w="full"
         >
             <GridItem
@@ -42,7 +42,9 @@ export function PageLayout({
             <GridItem area="main" m={0} p={0}>
                 {main}
             </GridItem>
-            <GridItem area="footer">{footer}</GridItem>
+            <GridItem area="footer" h="full" m={0} p={0} w="full">
+                {footer}
+            </GridItem>
         </Grid>
     );
 }

@@ -18,9 +18,9 @@ export function TabPanel({ data }: TabPanelProps): React.ReactElement {
     const variants: Variants = {
         hide: { opacity: 0 },
         show: {
-            delay: 0.3,
             opacity: 1,
             transition: {
+                delay: 0.3,
                 delayChildren: 0.2,
                 staggerChildren: 0.5
             }

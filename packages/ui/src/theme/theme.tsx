@@ -1,6 +1,7 @@
 import { type ThemeConfig, extendTheme } from '@chakra-ui/react';
 import '@fontsource/albert-sans';
 import '@fontsource/ibm-plex-mono';
+import '@fontsource/sanchez';
 import {
     Avatar,
     Badge,
@@ -30,7 +31,8 @@ export const theme: ThemeConfig = extendTheme({
     fonts: {
         body: `'Albert Sans', sans-serif`,
         heading: `'Albert Sans', sans-serif`,
-        mono: `'IBM Plex Mono', monospace`
+        mono: `'IBM Plex Mono', monospace`,
+        serif: `'Sanchez', serif`
     },
     initialColorMode: 'light',
     styles: {

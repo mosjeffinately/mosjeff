@@ -1,6 +1,6 @@
 'use client';
-import { Main } from '@mosjeff/components/sections/main';
+import { Home } from '@mosjeff/components/sections/home';
 
-export default function Home() {
-    return <Main />;
+export default function HomePage() {
+    return <Home />;
 }

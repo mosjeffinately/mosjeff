@@ -1,4 +1,5 @@
 'use client';
+import { Link } from '@chakra-ui/next-js';
 import {
     ButtonGroup,
     HStack,
@@ -32,12 +33,14 @@ export function Header() {
             py={2}
             w="full"
         >
-            <Image
-                alt="dope! logo"
-                h="4.5rem"
-                objectFit="cover"
-                src="/assets/images/dope-logo-olive.png"
-            />
+            <Link href="/">
+                <Image
+                    alt="dope! logo"
+                    h="4.5rem"
+                    objectFit="cover"
+                    src="/assets/images/dope-logo-olive.png"
+                />
+            </Link>
             <ButtonGroup ml="auto" spacing={4}>
                 <IconButton
                     aria-label="mosjeffinately github"

@@ -13,8 +13,17 @@ export type ProgressData = {
 
 export type UserData = {
     avatar: string;
-    description: string;
     email: string;
+    headline: string;
     location: string;
     name: string;
+    profile: {
+        abstract: React.ReactNode;
+        article: React.ReactNode;
+    };
+    socials?: {
+        instagram?: string;
+        linkedin?: string;
+        twitter?: string;
+    };
 };

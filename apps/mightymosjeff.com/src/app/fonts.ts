@@ -31,7 +31,7 @@ export const editorialSans = localFont({
             weight: '500',
         },
         {
-            path: './fonts/editorial-sans/PPEditorialSans-UltraLight.woff2',
+            path: './fonts/editorial-sans/PPEditorialSans-Ultralight.woff2',
             style: 'normal',
             weight: '200',
         },
@@ -39,26 +39,6 @@ export const editorialSans = localFont({
             path: './fonts/editorial-sans/PPEditorialSans-Thin.woff2',
             style: 'normal',
             weight: '100',
-        },
-        {
-            path: './fonts/editorial-sans/PPEditorialSans-Thin.woff2',
-            style: 'normal',
-            weight: '900',
-        },
-        {
-            path: './fonts/editorial-sans/PPEditorialSans-Thin.woff2',
-            style: 'normal',
-            weight: '900',
-        },
-        {
-            path: './fonts/editorial-sans/PPEditorialSans-Thin.woff2',
-            style: 'normal',
-            weight: '900',
-        },
-        {
-            path: './fonts/editorial-sans/PPEditorialSans-Thin.woff2',
-            style: 'normal',
-            weight: '900',
         },
     ],
     variable: '--font-editorial-sans',

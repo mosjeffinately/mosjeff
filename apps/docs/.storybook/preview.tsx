@@ -1,15 +1,19 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import { theme } from '@mosjeff/dope-design-system';
+import { Fonts, theme } from '@mosjeff/dope-design-system';
+import {
+    INITIAL_VIEWPORTS,
+    MINIMAL_VIEWPORTS
+} from '@storybook/addon-viewport';
 import { Preview } from '@storybook/react';
 import 'focus-visible/dist/focus-visible';
 import React from 'react';
+import '../global.css';
 
 const preview: Preview = {
     decorators: [
         (Story) => (
             <ChakraProvider theme={theme}>
-                {/* <CSSReset /> */}
-                {/* <Global styles={GlobalStyles} /> */}
+                <Fonts />
                 <Story />
             </ChakraProvider>
         )
@@ -26,6 +30,13 @@ const preview: Preview = {
         },
         chakra: {
             theme
+        },
+        viewport: {
+            defaultViewport: 'mobile1',
+            viewports: {
+                ...MINIMAL_VIEWPORTS,
+                ...INITIAL_VIEWPORTS
+            }
         }
     }
 };

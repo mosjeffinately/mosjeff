@@ -16,8 +16,6 @@ import {
     useToken,
     type CardProps
 } from '@chakra-ui/react';
-import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
 import { PiEnvelopeDuotone, PiMapPinDuotone } from 'react-icons/pi';
 import type { UserData } from '../../../types';
 
@@ -31,19 +29,14 @@ export function UserCard({
     variant = 'outline',
     ...props
 }: UserCardProps): React.ReactElement {
-    const { avatar, description, email, location, name } = user;
+    const { avatar, email, headline, location, name, profile } = user;
     const { isOpen, onToggle } = useDisclosure();
-    const [cream100] = useToken('colors', ['cream.100']);
+    const [cream100, gray700] = useToken('colors', ['cream.100', 'gray.700']);
 
-    const onClickHandler = (site: string) => () => {
-        if (site === 'twitter') {
-            window.open('https://www.twitter.com/mightymosjeff', 'noopener');
-        } else if (site === 'instagram') {
-            window.open('https://www.instagram.com/mos_ffej', 'noopener');
-        } else if (site === 'linkedin') {
-            window.open('https://www.linkedin.com/in/jjohnso8', 'noopener');
-        }
+    const onClickHandler = (url: string) => () => {
+        window.open(url, 'noopener');
     };
+
     return (
         <Card
             bgColor="gray.500"
@@ -101,30 +94,33 @@ export function UserCard({
                             spacing={12}
                             w="full"
                         >
-                            <IconButton
-                                aria-label="x"
-                                borderRadius="lg"
-                                icon={<Icon as={FaXTwitter} fontSize="lg" />}
-                                onClick={onClickHandler('twitter')}
-                                size="md"
-                                variant="gradient"
-                            />
-                            <IconButton
-                                aria-label="x"
-                                borderRadius="lg"
-                                icon={<Icon as={FaInstagram} fontSize="lg" />}
-                                onClick={onClickHandler('instagram')}
-                                size="md"
-                                variant="gradient"
-                            />
-                            <IconButton
-                                aria-label="x"
-                                borderRadius="lg"
-                                icon={<Icon as={FaLinkedinIn} fontSize="lg" />}
-                                onClick={onClickHandler('linkedIn')}
-                                size="md"
-                                variant="gradient"
-                            />
+                            {user.socials
+                                ? user.socials.map(
+                                      ({ ariaLabel, icon, url }) => (
+                                          <IconButton
+                                              aria-label={ariaLabel}
+                                              bgColor="gray.500"
+                                              borderColor="cream.300"
+                                              borderRadius="lg"
+                                              borderWidth={1}
+                                              color="cream.200"
+                                              fontSize="xl"
+                                              icon={icon}
+                                              onClick={onClickHandler(url)}
+                                              size="lg"
+                                              variant="outline"
+                                              _active={{
+                                                  bgColor: `${gray700}00`,
+                                                  color: 'cream.500'
+                                              }}
+                                              _hover={{
+                                                  bgColor: 'gray.600',
+                                                  color: 'cream.400'
+                                              }}
+                                          />
+                                      )
+                                  )
+                                : null}
                         </HStack>
                     </Stack>
                 </HStack>
@@ -142,17 +138,12 @@ export function UserCard({
                         bgGradient={`linear(to-l, pink.500, blue.500)`}
                         fontSize="2xl"
                         fontWeight="extrabold"
+                        textTransform="lowercase"
                     >
-                        currently seeking a frontend developer role.
+                        {headline}
                     </Text>
-                    <Stack align="flex-start" justify="center" px={20}>
-                        <Text
-                            fontFamily="serif"
-                            fontWeight="semibold"
-                            fontSize="md"
-                        >
-                            {`I'm Jeff, a frontend software engineer.  I currently live in Syracuse, New York with my wife, two daughters, and our Chocolate Lab puppy.  I like building cool UIs.`}
-                        </Text>
+                    <Stack align="flex-start" justify="center" px={16}>
+                        {profile.abstract}
                         <Collapse in={isOpen} startingHeight="14rem">
                             <Text
                                 color="cream.100"

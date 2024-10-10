@@ -1,6 +1,11 @@
 'use client';
-import { Center, Heading, Stack } from '@chakra-ui/react';
+import { Center, Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import { UserCard, UserData } from '@mosjeff/dope-design-system';
+import {
+    PiInstagramLogoDuotone,
+    PiLinkedinLogoDuotone,
+    PiXLogoDuotone
+} from 'react-icons/pi';
 
 export function AboutMe(): React.ReactElement {
     const user: UserData = {
@@ -10,14 +15,36 @@ export function AboutMe(): React.ReactElement {
         location: 'Syracuse, New York',
         name: 'Jeff Johnson',
         profile: {
-            abstract: `I am a software engineer with more than 20 years of experience seeking a role with a focus on
-            frontend development.  I am looking for an individual contributor role, but I do have a great deal of
-            experience managing and mentoring junior developers.  I like creating pretty UIs, but I also like writing beautiful code.  I am a design system nerd.  I will make a passionate argument for what I believe is right, but I am also very open to the ideas of
-            others.  I believe kindness and empathy are important.  We all make mistakes, and I take
-            ownership of mine.  I think there should be more pairing sessions and fewer meetings.  I am not
-            immune to imposter syndrome.  Standards are important, but so is flexibility.  I believe that the
-            best lessons you can learn as a developer come through the vulnerability of a code review.`
-        }
+            abstract: (
+                <Text fontFamily="serif" fontWeight="semibold" fontSize="lg">
+                    {`Hello 👋.  I'm Jeff.  My kids and their friends call me Ffej, which I rather enjoy.  I live in
+                    upstate NY with my wife, aforementioned kids and our Chocolate Lab puppy.  I love building stuff.
+                    I am a design system nerd 🤓.  I believe kindness and empathy are really important (be nice everybody).`}
+                </Text>
+            ),
+            article: (
+                <Text fontFamily="body" fontWeight="normal" fontSize="md">
+                    {`Like my native Buffalo 🦬, I'm a bit of a scrappy`}
+                </Text>
+            )
+        },
+        socials: [
+            {
+                ariaLabel: 'mightmosjeff on X',
+                icon: <Icon as={PiXLogoDuotone} />,
+                url: 'https://www.twitter.com/mightymosjeff'
+            },
+            {
+                ariaLabel: 'mos_ffej on Instagram',
+                icon: <Icon as={PiInstagramLogoDuotone} />,
+                url: 'https://www.instagram.com/mos_ffej'
+            },
+            {
+                ariaLabel: 'Jeff Johnson on LinkedIn',
+                icon: <Icon as={PiLinkedinLogoDuotone} />,
+                url: 'https://www.linkedin.com/in/jjohnso8'
+            }
+        ]
     };
 
     return (
@@ -30,7 +57,7 @@ export function AboutMe(): React.ReactElement {
                     fontSize="3xl"
                     fontWeight={400}
                 >
-                    {`who am i (what's my name?).`}
+                    {`who am i (what's my name?). - snoop doggy dogg`}
                 </Heading>
                 <UserCard user={user} variant="outline" />
             </Stack>

@@ -1,10 +1,12 @@
-import { MainSectionLayout } from '@mosjeff/components/layouts/main-section-layout';
-import { Resume } from '@mosjeff/components/sections/resume';
+import { PortfolioCarousel } from '@mosjeff/components/carousel/portfolio-carousel';
+import { FullWidthSectionLayout } from '@mosjeff/components/layouts/full-width-section-layout';
+import { Portfolio } from '@mosjeff/components/sections/portfolio';
+import { StorybookEmbed } from '@mosjeff/components/sections/storybook-embed';
 
-export default function Portfolio(): React.ReactElement {
+export default function PortfolioPage(): React.ReactElement {
     return (
-        <MainSectionLayout>
-            <Resume />
-        </MainSectionLayout>
+        <FullWidthSectionLayout>
+            <Portfolio />
+        </FullWidthSectionLayout>
     );
 }

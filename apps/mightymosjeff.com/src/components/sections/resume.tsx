@@ -15,7 +15,7 @@ export function Resume(): React.ReactElement {
 
     return (
         <Center>
-            <Stack h="100vh" justify="center" maxW="40rem" py={6} w="full">
+            <Stack h="100vh" justify="center" py={6} w="full">
                 <Box
                     as="object"
                     data="/assets/files/Jeff_Johnson-Resume_2024.pdf"

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="60px" viewBox="0 0 34 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>087 - Gas Cannister</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="087---Gas-Cannister" transform="translate(0.000000, 1.000000)">
+            <path d="M28,53.02 L28,56 C27.9967598,57.1032246 27.1032246,57.9967598 26,58 L8,58 C6.89677542,57.9967598 6.0032402,57.1032246 6,56 L6,53.02 L28,53.02 Z" id="Shape" fill="#C0C0C0" fill-rule="nonzero"></path>
+            <path d="M25,53.02 L25,56 C24.9967598,57.1032246 24.1032246,57.9967598 23,58 L8,58 C6.89677542,57.9967598 6.0032402,57.1032246 6,56 L6,53.02 L25,53.02 Z" id="Shape" fill="#DBDCDE" fill-rule="nonzero"></path>
+            <path d="M28,53.02 C32.19,51.96 33,47.11 33,45 L33,23 C33,19.69 31,12 17,12 C3,12 1,19.69 1,23 L1,45 C1,47.11 1.81,51.96 6,53.02" id="Shape" fill="#D8D8D8" fill-rule="nonzero"></path>
+            <path d="M25.5208,53.02 C29.2744,51.96 30,47.11 30,45 L30,23 C30,19.69 28.2083,12 15.6667,12 C3.1251,12 1.3333,19.69 1.3333,23 L1.3333,45 C1.3333,47.11 2.059,51.96 5.8125,53.02" id="Shape" fill="#EBEBEB" fill-rule="nonzero"></path>
+            <path d="M25,2.67 L25.0000006,13.12 L22,12.46 L21,12.24 L21,5 C20.9984072,4.44837635 20.5516236,4.00159279 20,4 L14,4 C13.4483764,4.00159279 13.0015928,4.44837635 13,5 L13,12.24 L8.99999937,13.12 L9,2.67 C8.99925077,1.72267137 9.66287721,0.904616127 10.59,0.71 C14.8111488,-0.234461962 19.1888512,-0.234461962 23.41,0.71 C24.3371228,0.904616127 25.0007492,1.72267137 25,2.67 Z" id="Shape" fill="#D8D8D8" fill-rule="nonzero"></path>
+            <path d="M22,2.67 L22.0000006,12.46 L21,12.24 L21,5 C20.9984072,4.44837635 20.5516236,4.00159279 20,4 L13.5,4 C12.9483764,4.00159279 12.5015928,4.44837635 12.5,5 L12.5,12.24 L8.99999937,12.46 L9,2.67 C8.99925077,1.72267137 9.66287721,0.904616127 10.59,0.71 C12.2045474,0.346955834 13.8472121,0.122804029 15.5,0.04 C17.1527879,0.122804029 18.7954526,0.346955834 20.41,0.71 C21.3371228,0.904616127 22.0007492,1.72267137 22,2.67 Z" id="Shape" fill="#EBEBEB" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#A7A7A7" fill-rule="nonzero" cx="14" cy="16" r="1"></circle>
+            <path d="M8,58 L11,58 C9.89677542,57.9967598 9.0032402,57.1032246 9,56 L9,53.02 L6,53.02 L6,56 C6.0032402,57.1032246 6.89677542,57.9967598 8,58 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M10.59,0.71 C9.66287721,0.904616127 8.99925077,1.72267137 9,2.67 L9,12.9424 C7.18953357,13.4963927 5.54178407,14.4842185 4.2,15.82 C2.17967292,17.6630389 1.01985295,20.2653849 1,23 L1,45 C1,46.7622 1.573,50.4282 4.2,52.2087 C4.681618,52.5781992 5.2286642,52.8534526 5.8124,53.02 L8.8124,53.02 C8.2286642,52.8534526 7.681618,52.5781992 7.2,52.2087 C4.573,50.4282 4,46.7622 4,45 L4,23 C4.01985295,20.2653849 5.17967292,17.6630389 7.2,15.82 C8.54178407,14.4842185 10.1895336,13.4963927 12,12.9424 L12,2.67 C11.9992508,1.72267137 12.6628772,0.904616127 13.59,0.71" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="0 45 0 32 0 23 2 23 2 32 2 45"></polygon>
+            <path d="M1,40 C0.448376352,40.0015928 0.00159278994,40.4483764 0,41 L0,45 L2,45 L2,41 C1.9983526,40.4483991 1.55160093,40.0016474 1,40 Z" id="Shape" fill="#A7A7A7" fill-rule="nonzero"></path>
+            <path d="M2,23 L0,23 L0,33 C0,33.5522847 0.44771525,34 1,34 C1.55228475,34 2,33.5522847 2,33 L2,23 Z" id="Shape" fill="#A7A7A7" fill-rule="nonzero"></path>
+            <path d="M-1.11022302e-16,37 C0.00395890223,37.2647108 0.107502237,37.5182135 0.29,37.71 L0.44,37.83 C0.495755978,37.867828 0.556283995,37.898092 0.62,37.92 C0.676660084,37.9488933 0.737335972,37.9691186 0.8,37.98 C0.866128743,37.9912482 0.932953379,37.9979306 1,38 C1.26476698,37.9963165 1.51836621,37.8927337 1.71,37.71 C1.95271017,37.476247 2.05919273,37.134706 1.99232838,36.8044366 C1.92546402,36.4741672 1.69451914,36.2009397 1.38,36.08 C1.25977769,36.028759 1.13067726,36.00158 1,36 C0.733964659,35.9972989 0.478038353,36.1017882 0.289913264,36.2899133 C0.101788174,36.4780384 -0.00270107592,36.7339647 -1.11022302e-16,37 Z" id="Shape" fill="#A7A7A7" fill-rule="nonzero"></path>
+            <path d="M1,45 C1,47.11 1.81,51.96 6,53.02" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M28,53.02 C32.19,51.96 33,47.11 33,45 L33,23 C33,19.69 31,12 17,12 C3,12 1,19.69 1,23" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M28,53.02 L28,56 C28,57.1045695 27.1045695,58 26,58 L8,58 C6.8954305,58 6,57.1045695 6,56 L6,53.02 L28,53.02 Z" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9,13.12 L9,2.6687 C9.00418502,1.72338403 9.66409741,0.907689589 10.5877,0.7062 C14.8107166,-0.235398696 19.1892834,-0.235398696 23.4123,0.7062 C24.3359026,0.907689589 24.995815,1.72338403 25,2.6687 L25,13.12" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13,12.24 L13,5 C13,4.44771525 13.4477153,4 14,4 L20,4 C20.5522847,4 21,4.44771525 21,5 L21,12.24" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17,12 L17,8" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17,53 L17,54" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M11,53 L11,54" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M23,53 L23,54" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M11,17 C11,17 5,19 5,24" id="Shape" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

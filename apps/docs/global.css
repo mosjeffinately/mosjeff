@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('./assets/fonts/monument-extended/PPMonumentExtended-Black.woff2')
+        format('woff2')
+        url('./assets/fonts/monument-extended/PPMonumentExtended-Black.woff')
+        format('woff');
+}
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./assets/fonts/monument-extended/PPMonumentExtended-Bold.woff2')
+        format('woff2')
+        url('./assets/fonts/monument-extended/PPMonumentExtended-Bold.woff')
+        format('woff');
+}
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/fonts/monument-extended/PPMonumentExtended-Regular.woff2')
+        format('woff2')
+        url('./assets/fonts/monument-extended/PPMonumentExtended-Regular.woff')
+        format('woff');
+}
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./assets/fonts/monument-extended/PPMonumentExtended-Light.woff2')
+        format('woff2')
+        url('./assets/fonts/monument-extended/PPMonumentExtended-Light.woff')
+        format('woff');
+}
+@font-face {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('./assets/fonts/monument-extended/PPMonumentExtended-Thin.woff2')
+        format('woff2')
+        url('./assets/fonts/monument-extended/PPMonumentExtended-Thin.woff')
+        format('woff');
+}

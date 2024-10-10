@@ -1,5 +1,14 @@
 import type { IconType } from 'react-icons';
 
+export type ExperienceData = {
+    company: string;
+    id: string;
+    location: string;
+    things: string[];
+    timeline: string;
+    title: string;
+};
+
 export type MenuItemData = {
     icon: IconType;
     onClick: () => void;
@@ -22,8 +31,8 @@ export type UserData = {
         article: React.ReactNode;
     };
     socials?: {
-        instagram?: string;
-        linkedin?: string;
-        twitter?: string;
-    };
+        ariaLabel: string;
+        icon: React.ReactElement;
+        url: string;
+    }[];
 };

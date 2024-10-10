@@ -14,8 +14,12 @@ import {
     Radio
 } from './components';
 import { workwear } from './config/colors';
+import './index.css';
 
 export const theme: ThemeConfig = extendTheme({
+    borders: {
+        '2xl': '1rem solid'
+    },
     colors: workwear.colors,
     components: {
         Avatar,
@@ -29,7 +33,9 @@ export const theme: ThemeConfig = extendTheme({
         Radio
     },
     fonts: {
-        body: `'Albert Sans', sans-serif`,
+        body: `var(--font-editorial-sans), 'Albert Sans', sans-serif`,
+        editorial: `var(--font-editorial-sans), sans-serif`,
+        extended: `var(--font-monument-extended), sans-serif`,
         heading: `'Albert Sans', sans-serif`,
         mono: `'IBM Plex Mono', monospace`,
         serif: `'Sanchez', serif`

@@ -1,6 +1,6 @@
 import { Container, Grid, GridItem } from '@chakra-ui/react';
 
-type PageLayoutProps = {
+export type PageLayoutProps = {
     footer?: React.ReactElement;
     header: React.ReactElement;
     main?: React.ReactElement;
@@ -39,7 +39,7 @@ export function PageLayout({
             >
                 {header}
             </GridItem>
-            <GridItem area="main" m={0} p={0}>
+            <GridItem area="main" h="full" m={0} p={0} w="full">
                 {main}
             </GridItem>
             <GridItem area="footer" h="full" m={0} p={0} w="full">

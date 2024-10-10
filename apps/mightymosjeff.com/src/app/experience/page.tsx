@@ -1,10 +1,11 @@
-import { MainSectionLayout } from '@mosjeff/components/layouts/main-section-layout';
-import { Resume } from '@mosjeff/components/sections/resume';
+'use client';
+import { FullWidthSectionLayout } from '@mosjeff/components/layouts/full-width-section-layout';
+import { Work } from '@mosjeff/components/sections/work';
 
 export default function Experience(): React.ReactElement {
     return (
-        <MainSectionLayout>
-            <Resume />
-        </MainSectionLayout>
+        <FullWidthSectionLayout>
+            <Work />
+        </FullWidthSectionLayout>
     );
 }
